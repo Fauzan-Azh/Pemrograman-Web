@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Pendaftaran Beasiswa</title>
+    <style>
+        body {
+            font-family: Montserrat, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .form-group {
+            margin-bottom: 15px;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 5px;
+            border: 2px solid #4CAF50;
+            border-radius: 5px;
+        }
+        
+        .error {
+            color: rgb(210, 0, 0);
+            font-size: 14px;
+            min-height: 20px;
+            display: block;
+        }
+        
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+        button:hover {
+            background-color: #197181;
+        }
+    </style>
+</head>
+<body>
+    <h1>Pendaftaran Beasiswa Indonesia Merdeka</h1>
+    
+    <form id="beasiswaForm">
+        <div class="form-group">
+            <label for="nama">Nama Lengkap:</label>
+            <input type="text" id="nama" name="nama">
+            <span id="errorNama" class="error"></span>
+        </div>
+
+        <div class="form-group">
+            <label for="tanggalLahir">Tanggal Lahir:</label>
+            <input type="date" id="tanggalLahir" name="tanggalLahir">
+            <span id="errorTanggalLahir" class="error"></span>
+        </div>
+
+        <div class="form-group">
+            <label for="nowa">Nomor WhatsApp:</label>
+            <input type="text" id="nowa" name="nowa">
+            <span id="errorNowa" class="error"></span>
+        </div>
+
+        <div class="form-group">
+            <label for="domisili">Domisili:</label>
+            <input type="text" id="domisili" name="domisili">
+            <span id="errorDomisili" class="error"></span>
+        </div>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
